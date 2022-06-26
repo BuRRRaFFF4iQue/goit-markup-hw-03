@@ -387,6 +387,7 @@ nav-item:focus{
 
 .btn-filter{
     padding: 6px 22px;
+    border: 0;
 
     font-family: inherit;
     font-weight: 500;
