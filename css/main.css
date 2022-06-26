@@ -5,6 +5,11 @@
     --color-description: #757575;
     --color-light: #ffffff;
 
+    /* Logo */
+    --logo-color: #2196F3;
+    --logo-color-top: #000000;
+    --logo-color-bottom: #ffffff;
+
     /* background-color */
     --bg-color-header: #ffffff;
     --bg-color-slogan: #2f303a;
@@ -14,7 +19,6 @@
     --bg-color-cards: #ffffff;
 
     /* Borders */
-
     --border-color-cards: #eeeeee;
     --border-top-header: #ececec;
 
@@ -23,13 +27,14 @@
     --links-color-footer: rgba(255, 255, 255, 0.6);
 
     /* Accents */
-    --accent-color: #2196F3;
+    --accent-color: #2094f3;
     --accent-color-slogan-button: #188ce8;
 }
 
     /* Main styles */
 body{
     font-family: 'Roboto', sans-serif;
+    color: var(--color-main);
 }
 
 ul{
@@ -38,6 +43,7 @@ ul{
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 .container{
@@ -46,3 +52,105 @@ a{
 }
 
     /* Header */
+header{
+    background: var(--bg-color-header);
+    border-top: 1px solid var(--border-top-header);
+}
+
+.navbar{
+    display: flex;
+
+}
+
+    /* Logo */
+.logo{
+    display: flex;
+    margin-top: 24px;
+    margin-right: 93px;
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: var(--logo-color);
+}
+
+.logo-top{
+    color: var(--logo-color-top);
+}
+
+    /* Navigation */
+.navigation{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+
+    margin-top: 32px;
+
+
+}
+
+.nav-item{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--color-main);
+}
+
+.nav-item:not(last-child){
+    margin-right: 50px;
+}
+
+.address-top{
+    display: flex;
+    margin-top: 32px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--links-color-header);
+}
+
+.link-top{
+    
+}
+
+    /* Slogan */
+.slogan{
+    background-color: var(--bg-color-slogan);
+    padding: 200px auto;
+}
+
+.slogan-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-top: 30;
+    text-transform: uppercase;
+    color: var(--color-light);
+}
+
+.slogan-btn{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    
+    padding: 10px 32px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    background-color: var(--accent-color);
+    color: var(--color-light);
+}
