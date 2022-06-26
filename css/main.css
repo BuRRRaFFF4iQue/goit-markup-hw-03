@@ -21,6 +21,7 @@
     /* Borders */
     --border-color-cards: #eeeeee;
     --border-top-header: #ececec;
+    --border-button: #f5f4fa;
 
     /*Links*/
     --links-color-header: #757575;
@@ -398,7 +399,7 @@ nav-item:focus{
     border-radius: 4px;
 
     color: var(--color-main);
-    background-color: var(--bg-color-secondary);
+    background-color: var(--bg-color-primary);
 }
 
 .btn-filter:hover,
@@ -410,7 +411,7 @@ nav-item:focus{
     0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 
-    color: var(--color-light);
+    color: var(--border-button);
     background-color: var(--accent-color);
 }
 
