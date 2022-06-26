@@ -17,42 +17,41 @@
 <body>
 
         <!-- Шапка сайту з навігацією, логотипом та контактами-->
-    <!-- Шапка сайту з навігацією, логотипом та контактами-->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-
-            <!-- Logotype header -->
-            <a href="./index.html" class="logo">Web<span class="logo-top">Studio</span></a></span></a>
-            
-            <!-- Navigation  -->
-            <ul class="navigation">
-                <li>
-                    <a href="./index.html" class="nav-item">Студия</a>
-                </li>
-                <li>
-                    <a href="./portfolio.html" class="nav-item">Портфолио</a>
-                </li>
-                <li>
-                    <a href="" class="nav-item">Контакты</a>
-                </li>
-            </ul>
-
-            <!-- Links -->
-            <address >
-                <ul class="address-top">
+        <header class="header">
+            <div class="container">
+                <nav class="navbar">
+    
+                <!-- Logotype header -->
+                <a href="./index.html" class="logo">Web<span class="logo-top">Studio</span></a></span></a>
+                
+                <!-- Navigation  -->
+                <ul class="navigation">
                     <li>
-                        <a href="mailto:info@devstudio.com" class="link-top">info@devstudio.com</a>
+                        <a href="./index.html" class="nav-item current">Студия</a>
                     </li>
                     <li>
-                        <a href="tel:+38 096 111 11 11" class="link-top">+38 096 111 11 11</a>
+                        <a href="./portfolio.html" class="nav-item">Портфолио</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-item">Контакты</a>
                     </li>
                 </ul>
-            </address>
-            </nav>
-        </div>
-
-    </header>
+    
+                <!-- Links -->
+                <address class="address-links">
+                    <ul class="address-top">
+                        <li>
+                            <a href="mailto:info@devstudio.com" class="link-top">info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+38 096 111 11 11" class="link-top">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            
+                </nav>
+            </div>
+        </header>
 
     <!-- Main content -->
     <main>
@@ -62,11 +61,11 @@
         
         <div class="container">
 
-        <h1></h1> <!-- todo Invisible -->
-        <h2></h2> <!-- todo Invisible -->
+        <h1 class="invisible"></h1> <!-- todo Invisible -->
+        <h2 class="invisible"></h2> <!-- todo Invisible -->
 
             <!-- Filter -->
-            <ul>
+            <ul class="filter">
                 <li>
                     <button type="button">Все</button>
                 </li>
@@ -179,22 +178,24 @@
 
     </main>
 
+    <!-- Footer -->
     <footer>
-        
+
+        <!-- Logotype footer -->
         <div class="container">
-        <a href="./index.html">Web<span>Studio</span></a>
+        <a href="./index.html" class="logo logo-footer">Web<span class="logo-bottom">Studio</span></a>
 
         <!-- Address -->
-        <address>
-            <ul>
+        <address class="address-bottom">
+            <ul class="address-bottom-list">
                 <li>
-                    <a href="https://goo.gl/maps/8QyrF7WRWFhjR8cw6">г. Киев, пр-т Леси Украинки, 26</a>
+                    <a href="https://goo.gl/maps/8QyrF7WRWFhjR8cw6" class="link-bottom link-map">г. Киев, пр-т Леси Украинки, 26</a>
                 </li>
                 <li>
-                    <a href="mailto:info@example.com">info@example.com</a>
+                    <a href="mailto:info@example.com" class="link-bottom">info@example.com</a>
                 </li>
                 <li>
-                    <a href="tel:+38 099 111 11 11">+38 099 111 11 11</a>
+                    <a href="tel:+38 099 111 11 11" class="link-bottom">+38 099 111 11 11</a>
                 </li>
             </ul>
 
