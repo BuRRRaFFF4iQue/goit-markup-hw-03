@@ -372,6 +372,7 @@ nav-item:focus{
 .port-section{
     padding-top: 94px;
     padding-bottom: 94px;
+
 }
 
 .filter{
@@ -399,7 +400,7 @@ nav-item:focus{
     border-radius: 4px;
 
     color: var(--color-main);
-    background-color: var(--bg-color-primary);
+    background-color: var(--bg-color-secondary);
 }
 
 .btn-filter:hover,
@@ -418,14 +419,51 @@ nav-item:focus{
 .cards{
     display: flex;
     justify-content: space-between;
-    align-content:space-between;
+    align-content: space-between;
     flex-wrap: wrap;
+    padding:0;
+    margin: auto;
 }
 
 .filter-card-item{
 
     background: var(--bg-color-cards);
-    border: 1px solid var(--border-color-cards)
+    border: 1px solid var(--border-color-cards);
+}
+
+.filter-card-item:nth-child(-n+6){
+    margin-bottom: 30px;
+}
+
+/*.filter-card-item:not(:nth-child(2n+2)){
+    margin-right: 30px ;
+}*/
+
+.card-img{
+    width: 370px;
+}
+
+.card-title{
+    margin: 20px 24px 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--color-main);
+}
+
+.card-description{
+    margin: 0 24px 20px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+/* identical to box height, or 188% */
+
+    letter-spacing: 0.03em;
+    color: var(--color-description);
 }
 
 /* Footer */
@@ -460,6 +498,12 @@ footer{
     color: rgba(255, 255, 255, 0.6);
 }
 
+.link-bottom:not(:last-child){
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
 .link-map{
+    margin-top: 20px;
     color: var(--color-light);
 }
