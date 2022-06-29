@@ -68,20 +68,34 @@ a {
   cursor: pointer;
 }
 
+button{
+  cursor: pointer;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .invisible {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Header */
 header {
   background: var(--bg-color-header);
-  border-top: 1px solid var(--border-top-header);
-  padding: 0;
+  border-bottom: 1px solid var(--border-top-header);
+  padding:25px 0;
   margin: auto 0;
 }
 
@@ -122,36 +136,39 @@ header {
 
 .navbar {
   display: flex;
+  padding: 0;
 }
 
 .navigation {
   display: flex;
-  align-content: center;
+
   justify-content: space-between;
-  margin: auto 0;
+  margin: 0;
   padding: 0;
 }
 
-.nav-item {
+.nav-item{
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: flex-start;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-right: 50px;
   color: var(--color-main);
 }
 
-.nav-item:not(:first-child) {
-  margin-right: 50px;
-}
-
-.nav-item:hover,
-.nav-item:focus {
-  color: var(--accent-color);
-}
-
-nav-item:hover,
-nav-item:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
 
@@ -165,9 +182,19 @@ nav-item:focus {
   margin-left: auto;
 }
 
+.address-top{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.link-top-item:not(:last-child){
+  margin-right: 50px
+}
+
 .link-top {
   display: flex;
-  margin-left: 50px;
 }
 
 .link-top:hover,
@@ -243,15 +270,13 @@ nav-item:focus {
 
 .achiev-list {
   display: flex;
-
-  margin: 0;
+  justify-content: space-between;
   padding: 0;
+  margin: 0;
 }
 
-.achiev-item:not(:last-child) {
-  margin: 0;
-  padding: 0;
-  margin-right: 30px;
+.achiev-item{
+  width: 250px;
 }
 
 .achiev-title {
@@ -262,8 +287,6 @@ nav-item:focus {
 }
 
 .achiev-description {
-  margin: 0;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -306,6 +329,8 @@ nav-item:focus {
 }
 
 .team-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -333,7 +358,13 @@ nav-item:focus {
   width: 270px;
 }
 
+.unit-text{
+  margin: 30px 60px;
+}
+
 .unit-title {
+  margin: 0;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
@@ -344,6 +375,8 @@ nav-item:focus {
 }
 
 .unit-description {
+  margin: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
@@ -424,8 +457,12 @@ nav-item:focus {
   width: 370px;
 }
 
+.card-text{
+  margin: 20px 24px;
+}
+
 .card-title {
-  margin: 20px 24px 4px;
+  margin: 0;
 
   font-weight: 700;
   font-size: 18px;
@@ -436,12 +473,11 @@ nav-item:focus {
 }
 
 .card-description {
-  margin: 0 24px 20px;
+  margin: 0;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  /* identical to box height, or 188% */
 
   letter-spacing: 0.03em;
   color: var(--color-description);
@@ -468,6 +504,8 @@ footer {
   padding: 0;
 }
 
+
+
 .link-bottom {
   font-style: normal;
   font-weight: 400;
@@ -478,8 +516,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.link-bottom:not(:last-child) {
-  display: inline-block;
+.link-bottom-item:not(:last-child) {
   margin-bottom: 9px;
 }
 

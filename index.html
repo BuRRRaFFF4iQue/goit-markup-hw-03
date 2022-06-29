@@ -19,6 +19,7 @@
     <!-- Шапка сайту з навігацією, логотипом та контактами-->
     <header>
         <div class="container">
+            <div class="header-links">
             <nav class="navbar">
 
             <!-- Logotype header -->
@@ -26,30 +27,31 @@
             
             <!-- Navigation  -->
             <ul class="navigation">
-                <li>
-                    <a href="./index.html" class="nav-item current">Студия</a>
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link current">Студия</a>
                 </li>
-                <li>
-                    <a href="./portfolio.html" class="nav-item">Портфолио</a>
+                <li class="nav-item">
+                    <a href="./portfolio.html" class="nav-link">Портфолио</a>
                 </li>
-                <li>
-                    <a href="" class="nav-item">Контакты</a>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Контакты</a>
                 </li>
             </ul>
-
+            </nav>
+            
             <!-- Links -->
             <address class="address-links">
                 <ul class="address-top">
-                    <li>
+                    <li class="link-top-item">
                         <a href="mailto:info@devstudio.com" class="link-top">info@devstudio.com</a>
                     </li>
-                    <li>
+                    <li class="address-top-item">
                         <a href="tel:+38 096 111 11 11" class="link-top">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </address>
         
-            </nav>
+        </div>
         </div>
     </header>
 
@@ -72,36 +74,36 @@
         <section class="achiev">
 
             <div class="container">
-            <h2 class="invisible"></h2>   <!--todo Invisible-->
 
-            <ul class="achiev-list">
-                <li class="achiev-item">
-                    <h3 class="achiev-title">Внимание к деталям</h3>
-                    <p class="achiev-description">
-                        Идейные соображения, а также начало повседневной работы по формированию позиции.
-                    </p>
-                </li>
-                <li class="achiev-item">
-                    <h3 class="achiev-title">Пунктуальность</h3>
-                    <p class="achiev-description">
-                        Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-                    </p>
-                </li>
-                <li class="achiev-item">
-                    <h3 class="achiev-title">Планирование</h3>
-                    <p class="achiev-description">
-                        Равным образом консультация с широким активом в значительной степени обуславливает.
-                    </p>
-                </li>
-                <li class="achiev-item">
-                    <h3 class="achiev-title">Современные технологии</h3>
-                    <p class="achiev-description">
-                        Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-                    </p>
-                </li>
-            </ul>
+                <h2 class="invisible"></h2>   <!--todo Invisible-->
+
+                <ul class="achiev-list">
+                    <li class="achiev-item">
+                        <h3 class="achiev-title">Внимание к деталям</h3>
+                        <p class="achiev-description">
+                            Идейные соображения, а также начало повседневной работы по формированию позиции.
+                        </p>
+                    </li>
+                    <li class="achiev-item">
+                        <h3 class="achiev-title">Пунктуальность</h3>
+                        <p class="achiev-description">
+                            Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                        </p>
+                    </li>
+                    <li class="achiev-item">
+                        <h3 class="achiev-title">Планирование</h3>
+                        <p class="achiev-description">
+                            Равным образом консультация с широким активом в значительной степени обуславливает.
+                        </p>
+                    </li>
+                    <li class="achiev-item">
+                        <h3 class="achiev-title">Современные технологии</h3>
+                        <p class="achiev-description">
+                            Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                        </p>
+                    </li>
+                </ul>
             </div>
-
         </section>
 
         <!-- Actions -->
@@ -132,42 +134,50 @@
             <ul class="team-list">
                 <li class="team-card">
                     <img src="./images/images2/img2-1.jpg" alt="Игорь Демьяненко" class="unit-image">
-                    <h3 class="unit-title">
-                        Игорь Демьяненко
-                    </h3>
-                    <p class="unit-description">
-                        Product Designer
-                    </p>
+                    <div class="unit-text">
+                        <h3 class="unit-title">
+                            Игорь Демьяненко
+                        </h3>
+                        <p class="unit-description">
+                            Product Designer
+                        </p>
+                    </div>
                 </li>
                 
                 <li class="team-card">
                     <img src="./images/images2/img2-2.jpg" alt="Ольга Репина" class="unit-image">
-                    <h3 class="unit-title">
-                        Ольга Репина
-                    </h3>
-                    <p class="unit-description">
-                        Frontend Developer
-                    </p>
+                    <div class="unit-text">
+                        <h3 class="unit-title">
+                            Ольга Репина
+                        </h3>
+                        <p class="unit-description">
+                            Frontend Developer
+                        </p>
+                    </div>
                 </li>
                 
                 <li class="team-card">
                     <img src="./images/images2/img2-3.jpg" alt="Николай Тарасов" class="unit-image">
-                    <h3 class="unit-title">
-                        Николай Тарасов
-                    </h3>
-                    <p class="unit-description">
-                        Marketing
-                    </p>
+                    <div class="unit-text">
+                        <h3 class="unit-title">
+                            Николай Тарасов
+                        </h3>
+                        <p class="unit-description">
+                            Marketing
+                        </p>
+                    </div>
                 </li>
                 
                 <li class="team-card">
                     <img src="./images/images2/img2-4.jpg" alt="Михаил Ермаков" class="unit-image">
-                    <h3 class="unit-title">
-                        Михаил Ермаков
-                    </h3>
-                    <p class="unit-description">
-                        UI Designer
-                    </p>
+                    <div class="unit-text">
+                        <h3 class="unit-title">
+                            Михаил Ермаков
+                        </h3>
+                        <p class="unit-description">
+                            UI Designer
+                        </p>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -186,13 +196,13 @@
         <!-- Address -->
         <address class="address-bottom">
             <ul class="address-bottom-list">
-                <li>
+                <li class="link-bottom-item">
                     <a href="https://goo.gl/maps/8QyrF7WRWFhjR8cw6" class="link-bottom link-map">г. Киев, пр-т Леси Украинки, 26</a>
                 </li>
-                <li>
+                <li class="link-bottom-item">
                     <a href="mailto:info@example.com" class="link-bottom">info@example.com</a>
                 </li>
-                <li>
+                <li class="link-bottom-item">
                     <a href="tel:+38 099 111 11 11" class="link-bottom">+38 099 111 11 11</a>
                 </li>
             </ul>
