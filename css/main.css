@@ -434,24 +434,26 @@ header {
 .cards {
   display: flex;
   justify-content: space-between;
-  align-content: space-between;
   flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
   padding: 0;
-  margin: auto;
 }
 
 .filter-card-item {
+  margin-top: 30px;
+  margin-left: 30px;
+
+  width: 370px;
+
+  flex-basis: calc(100% / 3 - 30рх);
   background: var(--bg-color-cards);
   border: 1px solid var(--border-color-cards);
 }
 
-.filter-card-item:nth-child(-n + 6) {
+.filter-card-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-
-/*.filter-card-item:not(:nth-child(2n+2)){
-    margin-right: 30px ;
-}*/
 
 .card-img {
   width: 370px;
