@@ -359,7 +359,7 @@ header {
 }
 
 .unit-text{
-  margin: 30px 60px;
+  padding: 30px 60px;
 }
 
 .unit-title {
@@ -457,7 +457,7 @@ header {
 }
 
 .card-text{
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 .card-title {
